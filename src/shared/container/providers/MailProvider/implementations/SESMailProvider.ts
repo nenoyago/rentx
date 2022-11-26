@@ -8,7 +8,7 @@ import handlebars from 'handlebars';
 import { IMailProvider } from '../IMailProvider';
 
 @injectable()
-class SESPMailProvider implements IMailProvider {
+class SESMailProvider implements IMailProvider {
   private client: Transporter;
 
   constructor() {
@@ -41,4 +41,4 @@ class SESPMailProvider implements IMailProvider {
   }
 }
 
-export { SESPMailProvider };
+export { SESMailProvider };
